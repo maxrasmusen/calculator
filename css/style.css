@@ -46,7 +46,7 @@ ul.calc {
   padding:12px 18px;
 }
 
-.display {
+#display {
   margin-bottom:20px;
   color:#fff;
   background-color:#171717;
