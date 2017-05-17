@@ -1,5 +1,5 @@
 var numbers = document.getElementsByClassName('number');
-var currentNumberString = '';
+var currentNumberString = ''; //just use display.value
 var display = document.getElementById('display');
 var operators = document.getElementsByClassName('operator');
 var operator = '';
