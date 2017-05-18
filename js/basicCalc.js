@@ -19,7 +19,10 @@ for (var i = 0; i < operators.length; i++) {
 
 var eq = document.getElementsByClassName('eq')[0];
 eq.addEventListener('click', function() {
-	display.value = calculate();
+	var result = calculate();
+	display.value = result;
+	savedNumber = result;
+	currentNumberString = '';
 });
 
 var clear = document.getElementsByClassName('clear')[0];
@@ -39,7 +42,9 @@ function set_operator(str) {
 }
 
 function saveNumber() {
-	savedNumber = parseFloat(currentNumberString);
+	if (currentNumberString !== '') {
+		savedNumber = parseFloat(currentNumberString);
+	}
 	currentNumberString = '';
 }
 
